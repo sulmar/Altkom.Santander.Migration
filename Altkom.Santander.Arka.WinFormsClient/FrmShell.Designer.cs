@@ -33,7 +33,7 @@
             // 
             // fundsView1
             // 
-            this.fundsView1.Location = new System.Drawing.Point(12, 50);
+            this.fundsView1.Location = new System.Drawing.Point(24, 62);
             this.fundsView1.Name = "fundsView1";
             this.fundsView1.Size = new System.Drawing.Size(715, 362);
             this.fundsView1.TabIndex = 0;

@@ -18,7 +18,10 @@ namespace Altkom.Santander.Arka.Models
         public string FullName { get; set; }
         public string Code { get; set; }
 
+
         public FundGroup Group { get; set; }
 
     }
+
+   
 }

@@ -28,12 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.fundsView1 = new Altkom.Santander.Arka.WinFormsClient.Views.FundsView();
+            this.SuspendLayout();
+            // 
+            // fundsView1
+            // 
+            this.fundsView1.Location = new System.Drawing.Point(12, 50);
+            this.fundsView1.Name = "fundsView1";
+            this.fundsView1.Size = new System.Drawing.Size(715, 362);
+            this.fundsView1.TabIndex = 0;
+            // 
+            // FrmShell
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.fundsView1);
+            this.Name = "FrmShell";
             this.Text = "FrmShell";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private Views.FundsView fundsView1;
     }
 }

@@ -59,6 +59,9 @@
     <Compile Include="Views\FundsView.Designer.cs">
       <DependentUpon>FundsView.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FrmShell.resx">
+      <DependentUpon>FrmShell.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -71,6 +74,7 @@
     <EmbeddedResource Include="Views\FundsView.resx">
       <DependentUpon>FundsView.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Properties\DataSources\Altkom.Santander.Arka.Models.Fund.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -83,6 +87,20 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Altkom.Santander.Arka.IServices\Altkom.Santander.Arka.IServices.csproj">
+      <Project>{DDFA9C32-404A-4194-985B-39886C6387B3}</Project>
+      <Name>Altkom.Santander.Arka.IServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Altkom.Santander.Arka.MockServices\Altkom.Santander.Arka.MockServices.csproj">
+      <Project>{038427C2-E899-4539-A2F1-3FDBCE36DE63}</Project>
+      <Name>Altkom.Santander.Arka.MockServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Altkom.Santander.Arka.Models\Altkom.Santander.Arka.Models.csproj">
+      <Project>{b3a596ab-8744-4e55-8c75-74272ccdf80b}</Project>
+      <Name>Altkom.Santander.Arka.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

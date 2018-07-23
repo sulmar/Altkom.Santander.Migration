@@ -5,6 +5,12 @@ VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Altkom.Santander.Arka.WinFormsClient", "Altkom.Santander.Arka.WinFormsClient\Altkom.Santander.Arka.WinFormsClient.csproj", "{9A40AEB4-189F-4B6C-A9E1-6D6311B893BD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Altkom.Santander.Arka.Models", "Altkom.Santander.Arka.Models\Altkom.Santander.Arka.Models.csproj", "{B3A596AB-8744-4E55-8C75-74272CCDF80B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Altkom.Santander.Arka.IServices", "Altkom.Santander.Arka.IServices\Altkom.Santander.Arka.IServices.csproj", "{DDFA9C32-404A-4194-985B-39886C6387B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Altkom.Santander.Arka.MockServices", "Altkom.Santander.Arka.MockServices\Altkom.Santander.Arka.MockServices.csproj", "{038427C2-E899-4539-A2F1-3FDBCE36DE63}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,18 @@ Global
 		{9A40AEB4-189F-4B6C-A9E1-6D6311B893BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A40AEB4-189F-4B6C-A9E1-6D6311B893BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A40AEB4-189F-4B6C-A9E1-6D6311B893BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3A596AB-8744-4E55-8C75-74272CCDF80B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3A596AB-8744-4E55-8C75-74272CCDF80B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3A596AB-8744-4E55-8C75-74272CCDF80B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3A596AB-8744-4E55-8C75-74272CCDF80B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDFA9C32-404A-4194-985B-39886C6387B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDFA9C32-404A-4194-985B-39886C6387B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDFA9C32-404A-4194-985B-39886C6387B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDFA9C32-404A-4194-985B-39886C6387B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{038427C2-E899-4539-A2F1-3FDBCE36DE63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{038427C2-E899-4539-A2F1-3FDBCE36DE63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{038427C2-E899-4539-A2F1-3FDBCE36DE63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{038427C2-E899-4539-A2F1-3FDBCE36DE63}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

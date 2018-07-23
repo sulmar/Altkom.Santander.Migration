@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Altkom.Santander.Arka.WinFormsClient
 {
-    public partial class Form1 : Form
+    public partial class FrmShell : Form
     {
-        public Form1()
+        public FrmShell()
         {
             InitializeComponent();
         }

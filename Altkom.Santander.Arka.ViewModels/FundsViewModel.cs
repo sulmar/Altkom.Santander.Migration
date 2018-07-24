@@ -1,4 +1,5 @@
-﻿using Altkom.Santander.Arka.IServices;
+﻿using Altkom.Santander.Arka.DbServices;
+using Altkom.Santander.Arka.IServices;
 using Altkom.Santander.Arka.MockServices;
 using Altkom.Santander.Arka.Models;
 using System;
@@ -21,8 +22,14 @@ namespace Altkom.Santander.Arka.ViewModels
 
         public bool IsBusy { get; set; }
 
+        //public FundsViewModel()
+        //    : this(new MockFundsService())
+        //{
+
+        //}
+
         public FundsViewModel()
-            : this(new MockFundsService())
+            : this(new DbFundsService())
         {
 
         }

@@ -14,8 +14,8 @@
     <Grid>
 
         <StackPanel>
-            <TextBox Text="{Binding Id}" />
-            <TextBox Text="{Binding Name}" />
+            <TextBox Text="{Binding Fund.Id}" />
+            <TextBox Text="{Binding Fund.Name, UpdateSourceTrigger=PropertyChanged}" />
         </StackPanel>
             
     </Grid>

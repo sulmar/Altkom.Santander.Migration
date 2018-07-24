@@ -6,6 +6,12 @@ namespace Altkom.Santander.Arka.Models
     {
         private string _name;
 
+
+        protected Fund()
+        {
+
+        }
+
         public Fund(int id, string name, string fullName, string code, FundGroup group)
         {
             Id = id;
@@ -32,6 +38,8 @@ namespace Altkom.Santander.Arka.Models
         }
         public string FullName { get; set; }
         public string Code { get; set; }
+
+
 
 
         public int FundGroupId { get; set; }

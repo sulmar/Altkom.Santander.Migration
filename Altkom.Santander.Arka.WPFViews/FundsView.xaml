@@ -8,6 +8,10 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
 
+    <UserControl.Resources>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+    </UserControl.Resources>
+
     <UserControl.DataContext>
         <vm:FundsViewModel />
     </UserControl.DataContext>
@@ -21,9 +25,9 @@
                 <Button Command="{Binding CalculateCommand}"
                         CommandParameter="Hello"
                         >Calculate</Button>
-                <Button>Calculate</Button>
-                <Button>Calculate</Button>
-                <Button>Calculate</Button>
+                <Button>Calculate 2</Button>
+                <Button Visibility="{Binding IsBusy, Converter={StaticResource BooleanToVisibilityConverter}}" >Calculate 3</Button>
+                <Button>Calculate 4</Button>
             </StackPanel>
        
         

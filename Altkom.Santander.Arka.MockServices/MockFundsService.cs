@@ -23,6 +23,8 @@ namespace Altkom.Santander.Arka.MockServices
 
         public ICollection<Fund> Get() => entities;
 
+        public Fund Get(int id) => entities.SingleOrDefault(e => e.Id == id);
+
         public void Remove(Fund entity) => entities.Remove(entity);
 
         public void Update(Fund entity)

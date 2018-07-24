@@ -10,13 +10,16 @@ using System.Windows.Input;
 
 namespace Altkom.Santander.Arka.ViewModels
 {
-    public class FundsViewModel
+    public class FundsViewModel : BaseViewModel
     {
         public ICollection<Fund> Funds { get; set; }
 
         public Fund SelectedFund { get; set; }
 
         private IFundsService fundsService;
+
+
+        public bool IsBusy { get; set; }
 
         public FundsViewModel()
             : this(new MockFundsService())
@@ -28,11 +31,17 @@ namespace Altkom.Santander.Arka.ViewModels
         {
             this.fundsService = fundsService;
 
-            Funds = this.fundsService.Get();
+            Load();
 
             CalculateCommand = new RelayCommand(p => Calculate(p), p => CanCalculate);
+
+            IsBusy = true;
         }
 
+        public void Load()
+        {
+            Funds = this.fundsService.Get();
+        }
 
         public bool IsSelected => SelectedFund != null;
 

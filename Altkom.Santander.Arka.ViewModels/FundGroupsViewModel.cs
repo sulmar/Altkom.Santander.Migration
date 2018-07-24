@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Altkom.Santander.Arka.ViewModels
 {
-    public class FundGroupsViewModel
+    public class FundGroupsViewModel : BaseViewModel
     {
         public ICollection<FundGroup> FundGroups { get; set; }
 

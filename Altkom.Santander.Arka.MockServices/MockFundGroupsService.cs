@@ -27,6 +27,11 @@ namespace Altkom.Santander.Arka.MockServices
 
         public ICollection<FundGroup> Get() => entities;
 
+        public FundGroup Get(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public void Remove(FundGroup entity)
         {
             throw new NotImplementedException();

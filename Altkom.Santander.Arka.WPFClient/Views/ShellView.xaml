@@ -22,7 +22,10 @@
             <!-- Content -->
             <!--<v:FundsView />-->
 
-            <v:FundsView />
+            <!--<v:FundsView />-->
+
+
+            <v:FundView />
 
         </DockPanel>
 

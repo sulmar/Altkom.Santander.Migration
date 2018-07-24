@@ -9,6 +9,7 @@ namespace Altkom.Santander.Arka.IServices
     public interface IEntitiesService<TEntity>
     {
         ICollection<TEntity> Get();
+        TEntity Get(int id);
         void Add(TEntity entity);
         void Remove(TEntity entity);
         void Update(TEntity entity);

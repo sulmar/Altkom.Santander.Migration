@@ -66,6 +66,7 @@
     </Compile>
     <Compile Include="Views\WPFFundGroupsView.cs" />
     <Compile Include="Views\WPFFundsView.cs" />
+    <Compile Include="Views\WPFFundView.cs" />
     <EmbeddedResource Include="FrmShell.resx">
       <DependentUpon>FrmShell.cs</DependentUpon>
     </EmbeddedResource>

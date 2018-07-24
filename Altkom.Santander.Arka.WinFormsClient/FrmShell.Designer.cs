@@ -55,7 +55,7 @@
             // 
             this.wpfFundGroupsView1.Location = new System.Drawing.Point(45, 437);
             this.wpfFundGroupsView1.Name = "wpfFundGroupsView1";
-            this.wpfFundGroupsView1.Size = new System.Drawing.Size(761, 215);
+            this.wpfFundGroupsView1.Size = new System.Drawing.Size(321, 207);
             this.wpfFundGroupsView1.TabIndex = 2;
             this.wpfFundGroupsView1.Text = "wpfFundGroupsView1";
             this.wpfFundGroupsView1.Child = this.hostedComponent2;

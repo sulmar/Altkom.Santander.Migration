@@ -4,18 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{15AF6BC9-5A3D-4F96-8476-9EA47BBF1C9A}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
-    <RootNamespace>Altkom.Santander.Arka.WPFClient</RootNamespace>
-    <AssemblyName>Altkom.Santander.Arka.WPFClient</AssemblyName>
+    <ProjectGuid>{392DA64A-0E29-4C16-A180-C8DB84F08668}</ProjectGuid>
+    <OutputType>library</OutputType>
+    <RootNamespace>Altkom.Santander.Arka.WPFViews</RootNamespace>
+    <AssemblyName>Altkom.Santander.Arka.WPFViews</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -25,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -50,38 +47,12 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <ApplicationDefinition Include="App.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </ApplicationDefinition>
-    <Compile Include="Views\FundsView.xaml.cs">
+    <Compile Include="FundGroupsView.xaml.cs">
+      <DependentUpon>FundGroupsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FundsView.xaml.cs">
       <DependentUpon>FundsView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\ShellView.xaml.cs">
-      <DependentUpon>ShellView.xaml</DependentUpon>
-    </Compile>
-    <Page Include="MainWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Compile Include="App.xaml.cs">
-      <DependentUpon>App.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Page Include="Views\FundsView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\ShellView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -105,16 +76,23 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <Page Include="FundGroupsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FundsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Altkom.Santander.Arka.Models\Altkom.Santander.Arka.Models.csproj">
+      <Project>{b3a596ab-8744-4e55-8c75-74272ccdf80b}</Project>
+      <Name>Altkom.Santander.Arka.Models</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Altkom.Santander.Arka.ViewModels\Altkom.Santander.Arka.ViewModels.csproj">
       <Project>{3d1b5c0f-d4b7-4160-90f2-048fca9051bf}</Project>
       <Name>Altkom.Santander.Arka.ViewModels</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Altkom.Santander.Arka.WPFViews\Altkom.Santander.Arka.WPFViews.csproj">
-      <Project>{392da64a-0e29-4c16-a180-c8db84f08668}</Project>
-      <Name>Altkom.Santander.Arka.WPFViews</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

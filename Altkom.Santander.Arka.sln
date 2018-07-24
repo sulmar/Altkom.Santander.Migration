@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Altkom.Santander.Arka.WPFCl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Altkom.Santander.Arka.ViewModels", "Altkom.Santander.Arka.ViewModels\Altkom.Santander.Arka.ViewModels.csproj", "{3D1B5C0F-D4B7-4160-90F2-048FCA9051BF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Altkom.Santander.Arka.WPFViews", "Altkom.Santander.Arka.WPFViews\Altkom.Santander.Arka.WPFViews.csproj", "{392DA64A-0E29-4C16-A180-C8DB84F08668}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{3D1B5C0F-D4B7-4160-90F2-048FCA9051BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D1B5C0F-D4B7-4160-90F2-048FCA9051BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D1B5C0F-D4B7-4160-90F2-048FCA9051BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{392DA64A-0E29-4C16-A180-C8DB84F08668}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{392DA64A-0E29-4C16-A180-C8DB84F08668}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{392DA64A-0E29-4C16-A180-C8DB84F08668}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{392DA64A-0E29-4C16-A180-C8DB84F08668}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

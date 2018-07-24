@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace Altkom.Santander.Arka.ViewModels
 {
@@ -28,7 +29,25 @@ namespace Altkom.Santander.Arka.ViewModels
             this.fundsService = fundsService;
 
             Funds = this.fundsService.Get();
+
+            CalculateCommand = new RelayCommand(p => Calculate(p), p => CanCalculate);
         }
+
+
+        public bool IsSelected => SelectedFund != null;
+
+
+        public ICommand CalculateCommand { get; set; } 
+
+        public void Calculate(object arg)
+        {
+            Console.WriteLine($"Calculating... {SelectedFund.Name}");
+        }
+
+
+        public bool CanCalculate => IsSelected && SelectedFund.Id > 20;
+
+        
 
     }
 }
